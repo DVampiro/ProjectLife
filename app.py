@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index_page():
-    game_of_life.GameOfLife()
+    game_of_life.GameOfLife(width=20, height=20)
     return render_template('index.html')
 
 
